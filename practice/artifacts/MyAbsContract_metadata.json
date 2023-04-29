@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "myfunction",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"practice/test.sol": "MyAbsContract"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"practice/test.sol": {
+			"keccak256": "0x7d7b99df5ee6d5c877195a1a6763df2966a8a9656ae8b1221bbb36d601b37f29",
+			"license": "unlicensed",
+			"urls": [
+				"bzz-raw://9aeac5fbf8472a709c45f4c8feaea517afcb00d0f098d96baba1cbcbd330e63a",
+				"dweb:/ipfs/QmTfmJbSqpEA6Jf25ek2WNoi4EFQxP7DeepFzHy6KjCRkw"
+			]
+		}
+	},
+	"version": 1
+}

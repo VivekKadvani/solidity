@@ -11,11 +11,10 @@ contract bank {
     //mapping of Token
     mapping(address => uint256) public TokenBalanceof;
     mapping(address=> uint256) public BalanceInContract;
+    mapping(address => uint)private TotalContractToken;
     mapping(address => mapping(address => uint256)) public allowence ; 
     //maping for ETH
     mapping(address => uint)private balance;
-    mapping(address => uint)private TotalContractToken;
-    mapping(address => uint)private Tokenbalance;
 
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
@@ -65,18 +64,19 @@ contract bank {
         return TotalContractToken[address(this)];
     }
     
+    //for ETH
     function deposit() public payable  {
         balance[msg.sender] +=msg.value;
     }
-
+    
     function withdrawETH(uint _amount) public{
         require (balance[msg.sender]>= _amount, "Insufficent Funds");
         balance[msg.sender]-=_amount;
         payable(msg.sender).transfer(_amount);
     }
 
-    function checkETHBalance() public view returns(uint){
-        return balance[msg.sender];
+    function checkETHBalance(address user) public view returns(uint){
+        return balance[user];
     }
     
 }    
