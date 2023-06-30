@@ -8,6 +8,6 @@ contract MyToken is ERC20 {
         _mint(msg.sender,1000**decimals());
     }
         function decimals() public view virtual override returns (uint8) {
-        return 10;
+        return 18;
     }
 }

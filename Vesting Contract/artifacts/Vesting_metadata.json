@@ -141,6 +141,11 @@
 						"type": "uint8"
 					},
 					{
+						"internalType": "uint256",
+						"name": "_start",
+						"type": "uint256"
+					},
+					{
 						"internalType": "uint8",
 						"name": "_cliff",
 						"type": "uint8"
@@ -210,6 +215,11 @@
 						"type": "bool"
 					},
 					{
+						"internalType": "bool",
+						"name": "claimed",
+						"type": "bool"
+					},
+					{
 						"internalType": "uint8",
 						"name": "slice_period",
 						"type": "uint8"
@@ -222,6 +232,11 @@
 					{
 						"internalType": "uint256",
 						"name": "recive_on_interval",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "last_timestamp",
 						"type": "uint256"
 					},
 					{
@@ -284,7 +299,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Vesting Contract/version2.sol": "Vesting"
+			"Vesting Contract/VestingContract.sol": "Vesting"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -330,12 +345,12 @@
 				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
 			]
 		},
-		"Vesting Contract/version2.sol": {
-			"keccak256": "0xe7bfb0df509eec92c3d70058339ebb506a935a8bf7953328b02bb860b3ced906",
+		"Vesting Contract/VestingContract.sol": {
+			"keccak256": "0xbdffdc53b24f86987eb969e399300e739c42751df146c20a7c5022faf34685f2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://88082156b27b912d7eb27ce0fb17dbd62422747492bd30313c6c8db83e880e8b",
-				"dweb:/ipfs/QmVLSvoMchWRCmWY1apMB4GKQbK9NSm6PuTEFjSWx8Bvez"
+				"bzz-raw://86475850d9b6c30f01db631261862cb1d5d66378f3202829e14d43555c31c247",
+				"dweb:/ipfs/Qmc2eudiFVe8EgputFkysXNFYZRWB2LvyFb5tCidu6QBTc"
 			]
 		}
 	},

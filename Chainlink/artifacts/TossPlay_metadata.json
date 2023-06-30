@@ -1,0 +1,239 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "requestId",
+						"type": "uint256"
+					}
+				],
+				"name": "CoinFlipRequest",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "requestId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "didWin",
+						"type": "bool"
+					}
+				],
+				"name": "CoinFlipResult",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum TossPlay.CoinFlipSelection",
+						"name": "choice",
+						"type": "uint8"
+					}
+				],
+				"name": "flip",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "requestId",
+						"type": "uint256"
+					}
+				],
+				"name": "getStatus",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "fees",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "randomWord",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "player",
+								"type": "address"
+							},
+							{
+								"internalType": "bool",
+								"name": "didWin",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "fulfilled",
+								"type": "bool"
+							},
+							{
+								"internalType": "enum TossPlay.CoinFlipSelection",
+								"name": "choice",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct TossPlay.CoinFlipStatus",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_requestId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_randomWords",
+						"type": "uint256[]"
+					}
+				],
+				"name": "rawFulfillRandomWords",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "statuses",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "fees",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "randomWord",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "player",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "didWin",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "fulfilled",
+						"type": "bool"
+					},
+					{
+						"internalType": "enum TossPlay.CoinFlipSelection",
+						"name": "choice",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Chainlink/TossPlay.sol": "TossPlay"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@chainlink/contracts/src/v0.8/VRFV2WrapperConsumerBase.sol": {
+			"keccak256": "0xa705e4602e2fc0f6baf00de84f99fbad0e4a6ffa75e1788890a052b6978db91d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ff8ad1c50a1d90f6cedaea30cded7fa281665ef99f9284d6751cd72bfefd65a3",
+				"dweb:/ipfs/Qme4Kc8sMagwHSVrvxGTtJzFSqAnvVPp4n3tNMvSheK5n2"
+			]
+		},
+		"@chainlink/contracts/src/v0.8/interfaces/LinkTokenInterface.sol": {
+			"keccak256": "0xc7d7cd730d36825485ef4107d93c3ff18b9f3a5a00ea3d5988ba9a0bd70b10c5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8cb1064885ecbcd9c3adba779e190cb4a538e5d4d15aeccb67d3376bdffc94bd",
+				"dweb:/ipfs/QmcQHK6ewve7tFi4XXK65JthQg4kQzApQikWcURJjGt4iQ"
+			]
+		},
+		"@chainlink/contracts/src/v0.8/interfaces/VRFV2WrapperInterface.sol": {
+			"keccak256": "0x44f6fa0cb1867a0bc137a195d4603bafa1cf74ecfbe69eb82a5dabeca8957738",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://87ebb29c09566ab02ff62c3c29f60a08db52f032b5f2c5220cd111aad88002ce",
+				"dweb:/ipfs/QmfScq3oJ6MkPXJh5JUrpz93bNMJ3ebtLcE3Q1H2DUNi93"
+			]
+		},
+		"Chainlink/TossPlay.sol": {
+			"keccak256": "0xae29ed767cb69226fd766294786a95cc6878f1a17aa04ea2d851e2da024f0f39",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a79da2de734fd5e66477ce29aee63edcd43d02e4103765e71139ad8eb6ef8e76",
+				"dweb:/ipfs/QmNZ3H3WLBs5Uz6CktkLjKgNs8eMdA7Uf357naCd7KcToh"
+			]
+		}
+	},
+	"version": 1
+}
